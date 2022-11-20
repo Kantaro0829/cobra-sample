@@ -1,0 +1,21 @@
+go mod init <MODNAME>
+
+go get -u github.com/spf13/cobra@latest
+
+go install github.com/spf13/cobra-cli@latest
+
+cobra-cli init [app]
+
+cobra-cli add serve
+
+
+cobra-cli add serve
+cobra-cli add config
+cobra-cli add create -p 'configCmd'
+
+go build .
+go install .
+
+root directory (cobra-sample)
+
+cobra-sample <コマンド>  
